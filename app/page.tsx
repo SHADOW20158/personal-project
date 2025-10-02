@@ -665,6 +665,179 @@ export default function RomanticLetter() {
                 </CardContent>
               </Card>
 
+              {/* Cute Couplet Heart Section */}
+              <Card className="bg-gradient-to-br from-rose-50 via-pink-50 to-red-50 shadow-xl mb-8 border-2 border-rose-200 slide-in-left glow-animation">
+                <CardContent className="p-8 relative overflow-hidden">
+                  {/* Floating heart elements */}
+                  <div className="absolute inset-0 pointer-events-none">
+                    {[...Array(20)].map((_, i) => (
+                      <div
+                        key={`couplet-heart-${i}`}
+                        className="absolute text-pink-300 opacity-30 float-animation"
+                        style={{
+                          left: `${Math.random() * 100}%`,
+                          top: `${Math.random() * 100}%`,
+                          animationDelay: `${Math.random() * 6}s`,
+                          fontSize: `${Math.random() * 12 + 8}px`,
+                        }}
+                      >
+                        💕
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="text-center mb-8 relative z-10 fade-in-up">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-rose-400 to-pink-500 rounded-full mb-6 shadow-lg float-animation">
+                      <span className="text-3xl">💖</span>
+                    </div>
+                    <h2 className="text-4xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent mb-3 rainbow-animation">
+                      Couplets From My Heart
+                    </h2>
+                    <p className="text-gray-700 italic text-lg bounce-gentle">
+                      Little poems that capture my love for you 💕
+                    </p>
+                  </div>
+
+                  {/* Heart-shaped container for couplets */}
+                  <div className="relative max-w-2xl mx-auto">
+                    {/* Large heart shape background */}
+                    <div className="relative bg-gradient-to-br from-pink-100 to-rose-100 rounded-t-full rounded-b-none mx-auto w-80 h-80 flex items-center justify-center shadow-2xl border-4 border-pink-200 glow-animation">
+                      {/* Heart shape using CSS */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-pink-200 to-rose-200 rounded-t-full transform rotate-45 origin-bottom-left"
+                           style={{
+                             width: '200px',
+                             height: '200px',
+                             top: '40px',
+                             left: '40px',
+                             borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%'
+                           }}>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-pink-200 to-rose-200 rounded-t-full transform -rotate-45 origin-bottom-right"
+                           style={{
+                             width: '200px',
+                             height: '200px',
+                             top: '40px',
+                             right: '40px',
+                             borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%'
+                           }}>
+                      </div>
+
+                      {/* Couplet content inside heart */}
+                      <div className="relative z-10 text-center p-8 max-w-xs">
+                        <div className="space-y-6">
+                          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg heartbeat-animation">
+                            <p className="text-lg font-medium text-rose-700 leading-relaxed">
+                              "In your eyes I see my home,<br/>
+                              In your heart I'll never roam"
+                            </p>
+                            <p className="text-sm text-gray-600 mt-2 italic sparkle-animation">💕</p>
+                          </div>
+
+                          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg heartbeat-animation">
+                            <p className="text-lg font-medium text-pink-700 leading-relaxed">
+                              "Distance fades when love is true,<br/>
+                              Every beat belongs to you"
+                            </p>
+                            <p className="text-sm text-gray-600 mt-2 italic sparkle-animation">💖</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Additional cute couplets around the heart */}
+                    <div className="grid md:grid-cols-2 gap-6 mt-12">
+                      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border-2 border-rose-200 slide-in-left glow-animation">
+                        <div className="text-center">
+                          <div className="text-4xl mb-3 bounce-gentle">🌸</div>
+                          <h4 className="text-xl font-bold text-rose-700 mb-4 heartbeat-animation">Sweet & Simple</h4>
+                          <div className="space-y-4">
+                            <div className="bg-rose-50 rounded-lg p-4">
+                              <p className="text-rose-800 font-medium">
+                                "Your smile lights up my day,<br/>
+                                In my heart you'll always stay"
+                              </p>
+                            </div>
+                            <div className="bg-pink-50 rounded-lg p-4">
+                              <p className="text-pink-800 font-medium">
+                                "Like stars that shine so bright,<br/>
+                                You make everything feel right"
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border-2 border-pink-200 slide-in-right glow-animation">
+                        <div className="text-center">
+                          <div className="text-4xl mb-3 bounce-gentle">🦋</div>
+                          <h4 className="text-xl font-bold text-pink-700 mb-4 heartbeat-animation">Cute & Playful</h4>
+                          <div className="space-y-4">
+                            <div className="bg-pink-50 rounded-lg p-4">
+                              <p className="text-pink-800 font-medium">
+                                "My paglii, my sweet delight,<br/>
+                                You make my world so bright"
+                              </p>
+                            </div>
+                            <div className="bg-rose-50 rounded-lg p-4">
+                              <p className="text-rose-800 font-medium">
+                                "Bhumiigulla, angel divine,<br/>
+                                Forever grateful you are mine"
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Special message about the couplets */}
+                    <div className="mt-8 text-center fade-in-up">
+                      <div className="bg-gradient-to-r from-rose-100 via-pink-100 to-red-100 rounded-2xl p-8 shadow-lg border-2 border-rose-200 glow-animation">
+                        <div className="text-5xl mb-4 heartbeat-animation">💝</div>
+                        <h4 className="text-2xl font-bold text-rose-700 mb-4 rainbow-animation">
+                          Why I Write These For You
+                        </h4>
+                        <div className="space-y-4 max-w-2xl mx-auto">
+                          <p className="text-lg text-gray-800 font-medium leading-relaxed">
+                            "Sometimes the biggest feelings fit in the smallest words"
+                          </p>
+                          <p className="text-gray-700 italic">
+                            Each couplet is a tiny love letter, capturing moments when my heart overflows thinking of you.
+                            They're simple because the truest feelings don't need fancy words - just honesty.
+                          </p>
+                          <p className="text-rose-700 font-semibold sparkle-animation">
+                            Every rhyme beats in sync with my heart saying your name 💕
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Interactive element - click to reveal more couplets */}
+                    <div className="mt-8 text-center">
+                      <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-pink-200 glow-animation">
+                        <div className="text-3xl mb-3 bounce-gentle">💌</div>
+                        <h5 className="text-lg font-semibold text-pink-700 mb-3">Hidden Couplet Treasure</h5>
+                        <p className="text-gray-600 text-sm mb-4">
+                          Search for "couplet" on this page to find a special hidden message just for you!
+                        </p>
+                        <div className="bg-gradient-to-r from-pink-50 to-rose-50 rounded-lg p-3 border border-pink-200">
+                          <p className="text-pink-700 font-medium text-sm sparkle-animation">
+                            💡 Hint: Use Ctrl+F and type "couplet" to discover my secret verse
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Hidden searchable couplet */}
+                  <div className="hidden-couplet-terms">
+                    <span className="opacity-0 absolute -z-10">couplet</span>
+                    <span className="opacity-0 absolute -z-10">poem</span>
+                    <span className="opacity-0 absolute -z-10">verse</span>
+                    <span className="opacity-0 absolute -z-10">rhyme</span>
+                  </div>
+                </CardContent>
+              </Card>
+
               {/* Her Innocence Section */}
               <Card className="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 shadow-xl mb-8 border-2 border-purple-200 slide-in-left glow-animation">
                 <CardContent className="p-8 relative overflow-hidden">
@@ -847,7 +1020,6 @@ export default function RomanticLetter() {
                                 These words from your pure heart show exactly why I call you my innocent angel 👼
                               </p>
                             </div>
-                          </div>
 
                           <div className="grid md:grid-cols-2 gap-4 mt-6">
                             <div className="bg-pink-100 rounded-lg p-4 text-center slide-in-left glow-animation">
@@ -1017,7 +1189,7 @@ export default function RomanticLetter() {
                     </h4>
                     <ol className="text-left text-gray-700 space-y-2">
                       <li>
-                        1. Press <kbd className="bg-gray-200 px-2 py-1 rounded text-sm">Ctrl + F</kbd> (or{" "}
+                        1. Press <kbd className="bg-gray-200 px-2 py-1 rounded text-sm">Ctrl + F</kbd> (or
                         <kbd className="bg-gray-200 px-2 py-1 rounded text-sm">Cmd + F</kbd> on Mac)
                       </li>
                       <li>2. Search for these special words:</li>
@@ -1059,6 +1231,9 @@ export default function RomanticLetter() {
                       </div>
                       <div className="bg-orange-100 rounded-lg p-3 text-center glow-animation">
                         <span className="font-medium text-orange-700">priceless</span>
+                      </div>
+                      <div className="bg-rose-100 rounded-lg p-3 text-center glow-animation">
+                        <span className="font-medium text-rose-700">couplet</span>
                       </div>
                     </div>
                   </div>
@@ -1146,6 +1321,12 @@ export default function RomanticLetter() {
                         came from the most beautiful soul 🌟
                       </p>
                     </div>
+                    <div className="bg-white/60 rounded-lg p-4 text-center slide-in-left glow-animation">
+                      <p className="text-gray-700">
+                        When you search for "<span className="font-semibold text-rose-600 sparkle-animation">couplet</span>
+                        ", here's my secret verse: "In every word I write for you, my love grows deeper, pure and true" 💕
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -1154,5 +1335,5 @@ export default function RomanticLetter() {
         </div>
       )}
     </div>
-  )
+  )\
 }
